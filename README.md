@@ -1,6 +1,9 @@
 # zip4j-android-test
 Basic project to test zip4j library on Android as in issue https://github.com/srikanth-lingala/zip4j/issues/34
 
+## Test status
+[![CircleCI](https://circleci.com/gh/nicolabeghin/zip4j-android-test.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+
 ## How to use
 
 1. Clone this project repo
