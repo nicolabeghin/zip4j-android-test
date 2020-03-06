@@ -2,7 +2,7 @@
 
 TARGET_FOLDER=zip4j_updated
 LIBRARY_FOLDER=zip4j
-REPO=git@github.com:srikanth-lingala/zip4j.git
+REPO=https://github.com/srikanth-lingala/zip4j.git
 
 # clone new version from official repo
 git clone $REPO $TARGET_FOLDER
