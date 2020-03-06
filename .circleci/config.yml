@@ -13,4 +13,7 @@ jobs:
       - run:
           command: ./update_zip4j.sh
       - run:
+         name: Chmod permissions
+         command: sudo chmod +x ./gradlew          
+      - run:
           command: ./gradlew build
