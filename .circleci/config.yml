@@ -1,0 +1,16 @@
+version: 2.1
+
+orbs:
+ android: circleci/android@0.2.0
+
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: circleci/android:api-27-node
+    steps:
+      - checkout
+      - run:
+          command: ./update_zip4j.sh
+      - run:
+          command: ./gradlew build
