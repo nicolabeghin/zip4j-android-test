@@ -4,7 +4,7 @@ orbs:
  android: circleci/android@0.2.0
 
 jobs:
-  build:
+  android-29:
     working_directory: ~/code
     docker:
       - image: circleci/android:api-29-node
@@ -206,3 +206,15 @@ jobs:
           destination: reports
       - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: zip4j/build/test-results
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - android-29
+      - android-28
+      - android-27
+      - android-26
+      - android-25
+      - android-24
+      - android-23
