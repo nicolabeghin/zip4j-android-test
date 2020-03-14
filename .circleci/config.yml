@@ -27,6 +27,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew :zip4j:testReleaseUnitTest --tests net.lingala.zip4j.*
+          no_output_timeout: 30m
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: zip4j/build/reports
           destination: reports
@@ -56,6 +57,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew :zip4j:testReleaseUnitTest --tests net.lingala.zip4j.*
+          no_output_timeout: 30m
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: zip4j/build/reports
           destination: reports
@@ -85,6 +87,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew :zip4j:testReleaseUnitTest --tests net.lingala.zip4j.*
+          no_output_timeout: 30m
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: zip4j/build/reports
           destination: reports
@@ -114,6 +117,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew :zip4j:testReleaseUnitTest --tests net.lingala.zip4j.*
+          no_output_timeout: 30m
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: zip4j/build/reports
           destination: reports
@@ -143,6 +147,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew :zip4j:testReleaseUnitTest --tests net.lingala.zip4j.*
+          no_output_timeout: 30m
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: zip4j/build/reports
           destination: reports
@@ -172,6 +177,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew :zip4j:testReleaseUnitTest --tests net.lingala.zip4j.*
+          no_output_timeout: 30m
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: zip4j/build/reports
           destination: reports
@@ -201,6 +207,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew :zip4j:testReleaseUnitTest --tests net.lingala.zip4j.*
+          no_output_timeout: 30m
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: zip4j/build/reports
           destination: reports
